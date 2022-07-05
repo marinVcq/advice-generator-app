@@ -24,13 +24,13 @@ Users should be able to:
 
 ### Screenshot
 
-![Mobile solution](./scrennshots/mobile.png)
+![Mobile solution](./screenshots/mobile.png)
 ![Desktop solution](./screenshots/desktop-activate.png)
 
 
 ### Links
 
-- Live Demo solution: [](https://your-live-site-url.com)
+- Live Demo solution: [Click here!](https://marinvcq.github.io/advice-generator-app/)
 
 ## My process
 
