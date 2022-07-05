@@ -1,0 +1,115 @@
+.main-container
+    @include width-height(100%,90vh)
+    @include flexbox(column, flex-start, center)
+    padding-top: 12rem
+
+    .box
+        @include flexbox(column, flex-start, center)
+        width: 34.3rem
+        min-height: 31.5rem
+        padding: 4rem 2.4rem 0 2.4rem
+        border-radius: 1rem
+        background-color: $dark-grayish-blue
+
+        h1
+            color: $neon-green
+            font-size: 1.1rem
+            text-transform: uppercase
+            letter-spacing: 0.29em
+
+        p
+            font-size: 2.25rem
+            line-height: 3.3rem
+            text-align: center
+            color: $light-cyan
+            margin-top: 2.8rem
+        
+        .animated
+            animation: show 0.8s ease-in-out
+
+        .pattern
+            @include width-height(29.5rem,1.6rem)
+            margin: 2.4rem 0 6.5rem 0
+            background-image: url('../assets/images/pattern-divider-mobile.svg')
+            background-position: center
+            background-size: contain 
+            background-repeat: no-repeat
+
+        .btn-container
+            @include width-height(6.6rem, 6.6rem)
+            @include set-position(absolute,100%, 50%)
+            transform: translate(-50%, -50%)
+
+            .button
+                @include width-height(6.6rem, 6.6rem)
+                border-radius: 50%
+                background-color: $neon-green
+                border: none
+                cursor: pointer
+                transition: 0.3s
+
+    .rotate
+        animation: spin 1.2s ease infinite
+
+
+.attribution
+    color: $light-cyan
+    height: 100%
+    font-size: 1.1rem
+    text-align: center
+    padding: 2.5rem 0 2.5rem 0
+
+/* MEDIA QUERIES */
+
+@include respond(desktop)
+    .main-container
+        padding-top: 22.3rem
+
+        .box
+            width: 54rem
+            min-height: 33.2rem
+            padding: 4.8rem 4.8rem 0 4.8rem
+            border-radius: 1.2rem
+
+            h1
+                font-size: 1.3rem
+
+            p
+                font-size: 2.65rem
+                line-height: 3.8rem
+
+            .pattern
+                @include width-height(44.4rem,1.6rem)
+                margin-top: 3.6rem
+                background-image: url('../assets/images/pattern-divider-desktop.svg')
+
+            .button
+
+                &:hover
+                    box-shadow: 1px 1px 33px 0px #52ffa8
+
+                img:hover
+                    cursor: pointer
+
+/* ANIMATION */
+
+@keyframes show 
+    from
+        opacity: 0
+    to 
+        opacity: 1
+
+@keyframes spin
+    0% 
+        transform: rotate(0turn)
+    50%
+        box-shadow: 1px 1px 33px 0px #52ffa8
+
+    100%
+        transform: rotate(1turn)
+
+
+
+
+
+
