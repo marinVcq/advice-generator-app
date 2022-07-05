@@ -89,7 +89,7 @@ a {
         cursor: pointer;
         transition: 0.3s; }
   .main-container .rotate {
-    animation: spin 1.2s ease infinite; }
+    animation: spin 1.2s ease-out infinite; }
 
 .attribution {
   color: #cee3e9;

@@ -7,13 +7,17 @@
 
     function getAdvice(){
 
-      btn.classList.add('rotate');
-      adviceText.classList.remove('animated');
-      adviceId.classList.remove('animated');
-
       setTimeout(function(){
         btn.classList.remove('rotate');
+        btn.disabled = false;
+
       },1200)
+
+      btn.classList.add('rotate');
+      btn.disabled = true;
+
+      adviceText.classList.remove('animated');
+      adviceId.classList.remove('animated');
 
       fetch('https://api.adviceslip.com/advice')
       
@@ -32,4 +36,3 @@
     }
 
     window.onload = getAdvice();
-    btn.addEventListener("submit",getAdvice());
