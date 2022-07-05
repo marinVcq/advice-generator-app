@@ -62,7 +62,7 @@ a {
       color: #cee3e9;
       margin-top: 2.8rem; }
     .main-container .box .animated {
-      animation: show 0.8s ease-in-out; }
+      animation: show 2.5s ease-in-out; }
     .main-container .box .pattern {
       width: 29.5rem;
       height: 1.6rem;
@@ -89,7 +89,7 @@ a {
         cursor: pointer;
         transition: 0.3s; }
   .main-container .rotate {
-    animation: spin 1.2s ease-out infinite; }
+    animation: spin 0.8s ease infinite; }
 
 .attribution {
   color: #cee3e9;

@@ -9,9 +9,8 @@
 
       setTimeout(function(){
         btn.classList.remove('rotate');
-        btn.disabled = false;
-
-      },1200)
+        setTimeout(function(){btn.disabled = false;},1200);
+      },800)
 
       btn.classList.add('rotate');
       btn.disabled = true;
